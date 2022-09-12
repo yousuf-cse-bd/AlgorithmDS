@@ -36,16 +36,18 @@ int main(int argc, char const *argv[]){
     // int A[] = {2, 1, 5, 4, 3};
     const unsigned int size = 5;
     int A[size];
-    int testCase = 120;
-    while(--testCase){
-            for(unsigned int i = 0; i < size; i++){
-            cin>>A[i];
+    int testCase = 1;
+    while(testCase <= 120){
+        cout<<testCase<<": Case = ";
+        for(unsigned int i = 0; i < size; i++){
+        cin>>A[i];
         }
         theBestBubbleSort(A, size);
         for(int x : A){
             cout<<x<<" ";
         }
         cout<<endl;
+        testCase++;
     }
     
     
