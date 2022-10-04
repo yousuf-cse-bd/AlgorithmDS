@@ -59,7 +59,7 @@ public:
         cout<<"Enter a New Element Here: ";
         cin>>keyElement;
         keyElement = toStringLowerCase(keyElement);
-        unsigned short int leftIndex, rightIndex, midIndex;
+        int leftIndex, rightIndex, midIndex;
         leftIndex = 0, rightIndex = size - 1;
         while(leftIndex <= rightIndex){
             midIndex = leftIndex + (rightIndex - leftIndex)/2;
@@ -73,9 +73,9 @@ public:
                 rightIndex = midIndex - 1;
             }
         }
-        if(leftIndex > rightIndex){
-            cout<<"\t"<<keyElement<<", Not Found...!"<<endl;
-        }
+        // if(leftIndex > rightIndex){
+        cout<<"\t"<<keyElement<<", Not Found...!"<<endl;
+        // }
     }
     ~BinarySearchString(){
         cout<<"\t\tTHANKS...!"<<endl;
