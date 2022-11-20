@@ -18,7 +18,7 @@ void mergeSortConquer(int elements[], const int leftIndex, const int midIndex, c
     /*Index, i for leftSubArray, Index, j for rightSubArray*/
     while(i <= midIndex && j <= rightIndex){
         /*Compararing leftSubArray's element is les than rightSubArray's elelment*/
-        if(*(elements+i) < *(elements+j)){
+        if(*(elements+i) <= *(elements+j)){
             *(temp+k) = *(elements+i);
             i++, k++;
         }else{
