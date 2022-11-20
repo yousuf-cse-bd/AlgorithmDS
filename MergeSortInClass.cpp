@@ -66,7 +66,7 @@ public:
         /*Traversing parallelly both sub arrays*/
         while(i <= midIndex && j <= upperIndex){
             /*Comparing left sub array is less than right sub array*/
-            if(*(elements + i) < *(elements + j)){
+            if(*(elements + i) <= *(elements + j)){
                 *(tempList + k) = *(elements + i);
                 k++, i++;
             }else{
