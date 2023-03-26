@@ -37,7 +37,7 @@ void display(void){
         cout<<"Empty stack...!"<<endl;
         return;
     }
-    for(unsigned short int i = 0; i < top; i++){
+    for(int i {top-1}; i >= 0; i--){
         cout<<"["<<i<<"] = "<<*(stackList+i)<<endl;
     }
 }
