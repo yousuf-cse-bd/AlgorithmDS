@@ -6,12 +6,13 @@
  * @date 2022-10-07
  * @since FriDay; 10:23 AM
  * @copyright Copyright (c) 2022
- * Dept. of CSE, Varendra University, Rajshahi, Bangladesh
+ * @institute: Dept. of CSE, Varendra University, Rajshahi, Bangladesh
  */
 #include <iostream>
 #include <ctime>
-using namespace std;
 #pragma pack(1)
+using namespace std;
+
 class CustomSort{
 public:
     unsigned int size;
@@ -43,6 +44,10 @@ public:
                 }
             }
         }
+    }
+    ~CustomSort(){
+        delete []arrayList;
+        arrayList = nullptr;
     }
     /*Function Proto-type*/
     void showSortedDatas(void);
